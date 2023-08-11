@@ -1,0 +1,53 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(210, 78, 78);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 150px;
+}
+
+nav #nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 650px;
+    height: auto;
+}
+
+#nav-container button {
+    width: 100px;
+    height:50px;
+    align-self: center;
+}
+
+.sketch-box{
+    display: flex;
+    justify-content: center;
+}
+
+#main-container {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.title h1 {
+    color: rgb(231, 231, 84);
+    font-size: 56px;
+    align-self: center;
+}
