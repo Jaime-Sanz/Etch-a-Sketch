@@ -33,11 +33,15 @@ nav #nav-container {
 }
 
 #main-container {
-    display: flex;
+    display: grid;
     width: 500px;
     height: 500px;
     border: 2px solid black;
     background: white;
+}
+
+.squares {
+    border: 1px solid black;
 }
 
 .title {
