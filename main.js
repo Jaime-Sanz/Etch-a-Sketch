@@ -1,6 +1,8 @@
 populateContainer(16);
 let color = "black"
+let colors = ["Red", "Orange", "Yellow", "Green", "Blue","Indigo", "Violet"];
 let shakeNumber = 16;
+let toggle = false;
 
 function populateContainer(size){
 let divContainer = document.getElementById('main-container');
@@ -35,18 +37,34 @@ function userInput(){
 }
 
 function squareColor () {
-    this.style.backgroundColor = color;
+    if (!toggle){
+        this.style.backgroundColor = color;
+    } else if(toggle){
+        let selection = Math.floor(Math.random() * 7);
+        color = colors[selection];
+        this.style.backgroundColor = color;
+    }
 }
 
-function colorSelection (choice) {
-    color = choice;
+const toggled = () => {
+    toggle = true;
 }
 
 function screenShake(){
+    color = "black";
+    toggle = false;
     let elementShaked = document.getElementById('main-container');
     elementShaked.classList.add('shake');
     setTimeout(() => {
         elementShaked.classList.remove('shake');
     }, 500);
-
 }
+
+const gitRead = () => {
+    window.open("https://github.com/Jaime-Sanz/Etch-a-Sketch")
+}
+
+const odinRead = () => {
+    window.open("https://www.theodinproject.com/lessons/foundations-etch-a-sketch")
+}
+
