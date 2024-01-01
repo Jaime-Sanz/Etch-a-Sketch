@@ -14,7 +14,7 @@ For those who would like to run the application and/or edit its source code on t
 
 > Note
 >
->> [A live deployment of the calculator is available on GitHub pages](https://jaime-sanz.github.io/Etch-a-Sketch/)
+>> [A live deployment of the game is available on GitHub pages](https://jaime-sanz.github.io/Etch-a-Sketch/)
 
 # Built Using
 > [![My Skills](https://skillicons.dev/icons?i=js,html,css,vscode,discord)](https://skillicons.dev)
